@@ -3,6 +3,7 @@ import './styles.css';
 import BtnWhatsapp from '../components/BtnWhatsapp';
 import Logo from '../components/Logo';
 import img from '../assets/img.jpg'
+import img2 from '../assets/img2.jpg'
 import selo from '../assets/selo.jpg'
 
 const Header = ({ children }) => {
@@ -45,6 +46,8 @@ const Hero = () => {
 
 const Index = () => {
     const selos = [1,2,3,4]
+    const projetos = [1,2,3,4,5,6]
+
     return(
         <div>
           <Header>
@@ -62,6 +65,24 @@ const Index = () => {
                      )
                  })
              }
+          </div>
+          <div>
+              <h2 className='px-8 py-2 text-2xl font-bold'>Projetos de Móveis Planejados</h2>
+              <div className='flex flex-wrap justify-around'>
+              {projetos.map(() => {
+                     return(
+                       <div className='max-w-sm'>
+                        <div className=' m-6 rounded shadow-lg'>
+                            <img  src={img2} alt='Projeto'/>
+                            <div className='px-6 py-4'>
+                                <p className ='font-bold text-xl mb-2'>Projeto </p>
+                                <p>Descrição</p>
+                            </div>
+                        </div>
+                      </div>
+                     )
+              })}
+              </div>
           </div>
           <Footer/>
         </div>
