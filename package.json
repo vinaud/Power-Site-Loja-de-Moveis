@@ -1,0 +1,16 @@
+{
+  "name": "loja-moveis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gatsby": "^2.21.9",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
