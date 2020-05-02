@@ -10,7 +10,10 @@
   "license": "ISC",
   "dependencies": {
     "gatsby": "^2.21.9",
+    "gatsby-plugin-postcss": "^2.3.0",
+    "gatsby-plugin-purgecss": "^5.0.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "tailwindcss": "^1.4.4"
   }
 }
