@@ -5,9 +5,23 @@ import Logo from '../components/Logo';
 
 const Header = ({ children }) => {
     return (
-        <div className = 'p-4 bg-indigo-800 sm:flex justify-between items-center'>
+        <header className = 'p-4 bg-indigo-800 sm:flex justify-between items-center'>
             {children}
-        </div>
+        </header>
+    )
+}
+
+const Footer = () => {
+    return (
+        <footer className = 'p-4 bg-gray-2800 sm:flex justify-between items-center' >
+            <div>
+              <h5>Loja Móveis</h5>
+              <p>Rua rua, Bairro bairro</p>
+            </div>
+
+            <BtnWhatsapp/>
+          
+          </footer>
     )
 }
 
@@ -21,9 +35,7 @@ const Index = () => {
               </div>
           </Header>
 
-          <div>
-          <h5></h5>
-          </div>
+          <Footer/>
         </div>
     )
 }
