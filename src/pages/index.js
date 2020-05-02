@@ -3,7 +3,7 @@ import './styles.css';
 import BtnWhatsapp from '../components/BtnWhatsapp';
 import Logo from '../components/Logo';
 import img from '../assets/img.jpg'
-import selo from '../assets/selo.ico'
+import selo from '../assets/selo.jpg'
 
 const Header = ({ children }) => {
     return (
@@ -54,11 +54,11 @@ const Index = () => {
               </div>
           </Header>
           <Hero/>
-          <div className='flex flex-col'>
+          <div className='flex flex-col sm:flex-row justify-around'>
              {
                  selos.map(() => {
                      return(
-                         <img src={selo} alt="Selo"/>
+                         <img className="my-4 object-scale-down h-48 w-48" src={selo} alt="Selo"/>
                      )
                  })
              }
