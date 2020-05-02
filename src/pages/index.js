@@ -6,6 +6,7 @@ import Logo from '../components/Logo';
 import img from '../assets/img.jpg';
 import img2 from '../assets/img2.jpg';
 import selo from '../assets/selo.jpg';
+import {graphql, useStaticQuery} from 'gatsby';
 
 const Header = ({ children }) => {
     return (
@@ -31,6 +32,7 @@ const Footer = () => {
 
 
 const Hero = () => {
+    
     return(
         <div className='flex flex-col items-center sm:flex-row sm: justify-between bg-fixed'  >
               <div className='p-8'>
@@ -46,14 +48,24 @@ const Hero = () => {
 
 
 const Index = () => {
+
     const selos = [1,2,3,4]
     const projetos = [1,2,3,4,5,6]
+
+    const { site } = useStaticQuery(graphql`query MyQuery {
+            site {
+              siteMetaData {
+                title
+              }
+            }
+          } `)
 
     return(
         <div>
           <Helmet>
-             <title>Loja - Móveis Planejados</title>
+             <title>{site.siteMetaData.title}</title>
           </Helmet>
+          
           <Header>
               <Logo />
               <div>
