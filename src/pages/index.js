@@ -1,10 +1,11 @@
 import React from 'react';
+import { Helmet} from 'react-helmet';
 import './styles.css';
 import BtnWhatsapp from '../components/BtnWhatsapp';
 import Logo from '../components/Logo';
-import img from '../assets/img.jpg'
-import img2 from '../assets/img2.jpg'
-import selo from '../assets/selo.jpg'
+import img from '../assets/img.jpg';
+import img2 from '../assets/img2.jpg';
+import selo from '../assets/selo.jpg';
 
 const Header = ({ children }) => {
     return (
@@ -50,6 +51,9 @@ const Index = () => {
 
     return(
         <div>
+          <Helmet>
+             <title>Loja - Móveis Planejados</title>
+          </Helmet>
           <Header>
               <Logo />
               <div>
