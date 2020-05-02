@@ -52,18 +52,18 @@ const Index = () => {
     const selos = [1,2,3,4]
     const projetos = [1,2,3,4,5,6]
 
-    const { site } = useStaticQuery(graphql`query MyQuery {
+   /* const { site } = useStaticQuery(graphql`query MyQuery {
             site {
               siteMetaData {
                 title
               }
             }
           } `)
-
+*/
     return(
         <div>
           <Helmet>
-             <title>{site.siteMetaData.title}</title>
+             <title>Loja Móveis</title>
           </Helmet>
           
           <Header>
