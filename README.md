@@ -6,6 +6,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
 ## Descrição
+Este projeto é um template de site para uma loja demóveis planejados. Desenvolvido em ReactJS, sendo a build construida pelo Gatsby, de maneira a gerar dinamicamenteuma pagina estática.
 
 ## Produção
 
